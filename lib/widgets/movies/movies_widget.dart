@@ -41,7 +41,7 @@ class MoviesWidget extends ConsumerWidget {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
                     child: CachedImageWidget(
-                      imgUrl: "https://image.tmdb.org/t/p/w500/${movieModel.posterPath}", 
+                      imgUrl: "https://image.tmdb.org/t/p/w500/${movieModel.poster_path}", 
                     ),
                   ),
                   const SizedBox(width: 10),
@@ -63,7 +63,7 @@ class MoviesWidget extends ConsumerWidget {
                               size: 20,
                             ),
                             SizedBox(width: 5),
-                            Text("${movieModel.voteAverage.toStringAsFixed(1)}/10"),
+                            Text("${movieModel.vote_average.toStringAsFixed(1)}/10"),
                           ],
                         ),
                         const SizedBox(height: 10),
@@ -81,7 +81,7 @@ class MoviesWidget extends ConsumerWidget {
                             ),
                             const SizedBox(width: 5),
                             Text(
-                              movieModel.releaseDate,
+                              movieModel.release_date,
                               style: TextStyle(color: Colors.grey),
                             ),
                             const Spacer(),

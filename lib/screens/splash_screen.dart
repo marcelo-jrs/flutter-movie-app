@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mvvm_statemanagements/screens/movies_screen.dart';
 import 'package:mvvm_statemanagements/service/init_getit.dart';
 import 'package:mvvm_statemanagements/service/navigation_service.dart';
-import 'package:mvvm_statemanagements/view_model/favorites/favortie_provider.dart';
+import 'package:mvvm_statemanagements/view_model/favorites/favorite_provider.dart';
 import 'package:mvvm_statemanagements/view_model/movies/movies_provider.dart';
 import 'package:mvvm_statemanagements/widgets/my_error_widget.dart';
 
@@ -26,6 +26,7 @@ class SplashScreen extends ConsumerWidget {
       body: initWatch.when(loading: () { 
         return const CircularProgressIndicator.adaptive();
       }, error: (error, _) {
+        debugPrint("❌ SplashScreen error: $error");
         return MyErrorWidget(
             errorText: error.toString(),
             retryFunction: () => ref.refresh(initializatinProvider));

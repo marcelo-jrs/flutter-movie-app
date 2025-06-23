@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mvvm_statemanagements/constants/my_app_constants.dart';
 import 'package:mvvm_statemanagements/models/genres_model.dart';
 import 'package:mvvm_statemanagements/models/movies_model.dart';
 import 'package:mvvm_statemanagements/utils/genre_utils.dart';
@@ -16,7 +15,7 @@ class GenresWidget extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     List<GenreModel> moviesGenre = GenreUtils.movieGenresNames(
-      movieModel.genreIds,
+      movieModel.genre_ids,
       ref
     );
     return Wrap(

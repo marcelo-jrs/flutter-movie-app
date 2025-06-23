@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mvvm_statemanagements/constants/my_app_constants.dart';
 import 'package:mvvm_statemanagements/models/movies_model.dart';
-import 'package:mvvm_statemanagements/view_model/movies/movies_provider.dart';
 import 'package:mvvm_statemanagements/widgets/cached_network_image.dart';
 import 'package:mvvm_statemanagements/widgets/movies/genres_widget.dart';
 import 'package:mvvm_statemanagements/widgets/movies/favorite_btn.dart';
@@ -29,7 +27,7 @@ class MovieDetailsScreen extends ConsumerWidget {
               height: size.height * 0.45,
               width: double.infinity,
               child: CachedImageWidget(
-                imgUrl: "https://image.tmdb.org/t/p/w500/${movieModel.posterPath}",
+                imgUrl: "https://image.tmdb.org/t/p/w500/${movieModel.poster_path}",
               ),
             ),
             SingleChildScrollView(
@@ -73,10 +71,10 @@ class MovieDetailsScreen extends ConsumerWidget {
                                       size: 20,
                                     ),
                                     SizedBox(width: 5),
-                                    Text("${movieModel.voteAverage.toStringAsFixed(1)}/10"),
+                                    Text("${movieModel.vote_average.toStringAsFixed(1)}/10"),
                                     Spacer(),
                                     Text(
-                                      movieModel.releaseDate,
+                                      movieModel.release_date,
                                       style: TextStyle(color: Colors.grey),
                                     ),
                                   ],

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mvvm_statemanagements/view_model/favorites/favortie_provider.dart';
+import 'package:mvvm_statemanagements/view_model/favorites/favorite_provider.dart';
 import '../constants/my_app_icons.dart';
 import '../widgets/movies/movies_widget.dart';
 
@@ -16,7 +16,7 @@ class FavoritesScreen extends ConsumerWidget {
         actions: [
           IconButton(
             onPressed: () {
-              ref.read(favoritesProvider.notifier).clearAllFavs();
+              ref.read(favoritesProvider.notifier).clearAllFavorites();
             },
             icon: const Icon(
               MyAppIcons.delete,

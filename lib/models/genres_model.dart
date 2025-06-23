@@ -1,28 +1,15 @@
-class GenreModel {
-  int id;
-  String name;
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-  GenreModel({
-    required this.id,
-    required this.name,
-  });
+part 'genres_model.freezed.dart';
+part 'genres_model.g.dart';
 
-  factory GenreModel.fromJson(Map<String, dynamic> json) {
-    return GenreModel(
-      id: json['id'],
-      name: json['name'],
-    );
-  }
+@freezed
+abstract class GenreModel with _$GenreModel {
+  factory GenreModel({
+    required int id,
+    required String name,
+  }) = _GenreModel;
 
-    Map<String, dynamic> toJson() {
-    return {
-      'id': id,
-      'name': name,
-    };
-  }
+  factory GenreModel.fromJson(Map<String, dynamic> json) => _$GenreModelFromJson(json);
 
-  @override
-  String toString() {
-    return "GenreModel(id: $id, name: $name)";
-  }
 }
