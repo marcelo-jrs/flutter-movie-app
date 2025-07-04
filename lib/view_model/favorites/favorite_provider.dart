@@ -6,7 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 part 'favorite_provider.g.dart';
 
-@riverpod
+@Riverpod(keepAlive: true)
 class Favorites extends _$Favorites {
   static const _favsKey = "favsKey";
 

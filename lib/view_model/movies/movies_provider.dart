@@ -7,7 +7,7 @@ import 'package:mvvm_statemanagements/view_model/movies/movies_state.dart';
 
 part 'movies_provider.g.dart'; // generated file
 
-@riverpod
+@Riverpod(keepAlive: true)
 class Movies extends _$Movies {
   final MoviesRepository _moviesRepository = getIt<MoviesRepository>();
 
