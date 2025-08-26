@@ -1,8 +1,8 @@
 # Mobile Movie App
 
-This app is built on Flutter with MVVM Architecture with Riverpod for state management
+This app is built on Flutter with MVVM Architecture and Riverpod for state management
 
-TMDB API for fetch information about the movies
+TMDB API to fetch information about the movies
 
 GetIt for dependency Injection
 
