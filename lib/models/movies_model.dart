@@ -7,7 +7,7 @@ part 'movies_model.g.dart';
 abstract class MovieModel with _$MovieModel {
   factory MovieModel({
     required bool adult,
-    required String backdrop_path,
+    required String? backdrop_path,
     required List<int> genre_ids,
     required int id,
     required String original_language,

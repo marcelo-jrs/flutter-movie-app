@@ -1,9 +1,9 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:mvvm_statemanagements/models/movies_model.dart';
-import 'package:mvvm_statemanagements/repository/movies_repo.dart';
-import 'package:mvvm_statemanagements/service/init_getit.dart';
-import 'package:mvvm_statemanagements/view_model/movies/movies_state.dart';
+import 'package:movieapp/models/movies_model.dart';
+import 'package:movieapp/repository/movies_repo.dart';
+import 'package:movieapp/service/init_getit.dart';
+import 'package:movieapp/view_model/movies/movies_state.dart';
 
 part 'movies_provider.g.dart'; // generated file
 

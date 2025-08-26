@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mvvm_statemanagements/constants/my_app_icons.dart';
-import 'package:mvvm_statemanagements/models/movies_model.dart';
-import 'package:mvvm_statemanagements/screens/movies_details.dart';
-import 'package:mvvm_statemanagements/service/init_getit.dart';
-import 'package:mvvm_statemanagements/service/navigation_service.dart';
-import 'package:mvvm_statemanagements/widgets/cached_network_image.dart';
-import 'package:mvvm_statemanagements/widgets/movies/favorite_btn.dart';
-import 'package:mvvm_statemanagements/widgets/movies/genres_widget.dart';
+import 'package:movieapp/constants/my_app_icons.dart';
+import 'package:movieapp/models/movies_model.dart';
+import 'package:movieapp/screens/movies_details.dart';
+import 'package:movieapp/service/init_getit.dart';
+import 'package:movieapp/service/navigation_service.dart';
+import 'package:movieapp/widgets/cached_network_image.dart';
+import 'package:movieapp/widgets/movies/favorite_btn.dart';
+import 'package:movieapp/widgets/movies/genres_widget.dart';
 
 class MoviesWidget extends ConsumerWidget {
   const MoviesWidget({

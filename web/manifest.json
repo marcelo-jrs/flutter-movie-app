@@ -1,6 +1,6 @@
 {
-    "name": "mvvm_statemanagements",
-    "short_name": "mvvm_statemanagements",
+    "name": "movieapp",
+    "short_name": "movieapp",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

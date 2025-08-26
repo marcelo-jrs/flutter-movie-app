@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:mvvm_statemanagements/models/genres_model.dart';
-import 'package:mvvm_statemanagements/models/movies_model.dart';
+import 'package:movieapp/models/genres_model.dart';
+import 'package:movieapp/models/movies_model.dart';
 
 part 'movies_state.freezed.dart';
 // part 'movies_state.g.dart';

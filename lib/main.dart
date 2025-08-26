@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mvvm_statemanagements/constants/my_theme_data.dart';
-import 'package:mvvm_statemanagements/enums/theme_enums.dart';
-import 'package:mvvm_statemanagements/screens/splash_screen.dart';
-import 'package:mvvm_statemanagements/service/init_getit.dart';
-import 'package:mvvm_statemanagements/service/navigation_service.dart';
-import 'package:mvvm_statemanagements/view_model/theme_provider.dart';
+import 'package:movieapp/constants/my_theme_data.dart';
+import 'package:movieapp/enums/theme_enums.dart';
+import 'package:movieapp/screens/splash_screen.dart';
+import 'package:movieapp/service/init_getit.dart';
+import 'package:movieapp/service/navigation_service.dart';
+import 'package:movieapp/view_model/theme_provider.dart';
 
 void main() async{
-  setUpLocator(); // Initialize GetIt
+  setUpLocator();
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
@@ -23,7 +23,6 @@ void main() async{
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final themeState = ref.watch(themeProvider);

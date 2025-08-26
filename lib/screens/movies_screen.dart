@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mvvm_statemanagements/view_model/movies/movies_provider.dart';
-import 'package:mvvm_statemanagements/view_model/theme_provider.dart';
+import 'package:movieapp/view_model/movies/movies_provider.dart';
+import 'package:movieapp/view_model/theme_provider.dart';
 
 import '../constants/my_app_icons.dart';
 import '../enums/theme_enums.dart';
