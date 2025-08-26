@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mvvm_statemanagements/models/genres_model.dart';
-import 'package:mvvm_statemanagements/models/movies_model.dart';
-import 'package:mvvm_statemanagements/utils/genre_utils.dart';
+import 'package:movieapp/models/genres_model.dart';
+import 'package:movieapp/models/movies_model.dart';
+import 'package:movieapp/utils/genre_utils.dart';
 
 class GenresWidget extends ConsumerWidget {
   const GenresWidget({

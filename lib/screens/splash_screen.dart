@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mvvm_statemanagements/screens/movies_screen.dart';
-import 'package:mvvm_statemanagements/service/init_getit.dart';
-import 'package:mvvm_statemanagements/service/navigation_service.dart';
-import 'package:mvvm_statemanagements/view_model/favorites/favorite_provider.dart';
-import 'package:mvvm_statemanagements/view_model/movies/movies_provider.dart';
-import 'package:mvvm_statemanagements/widgets/my_error_widget.dart';
+import 'package:movieapp/screens/movies_screen.dart';
+import 'package:movieapp/service/init_getit.dart';
+import 'package:movieapp/service/navigation_service.dart';
+import 'package:movieapp/view_model/favorites/favorite_provider.dart';
+import 'package:movieapp/view_model/movies/movies_provider.dart';
+import 'package:movieapp/widgets/my_error_widget.dart';
 
 final initializatinProvider = FutureProvider.autoDispose<void>((ref) async {
   ref.keepAlive();

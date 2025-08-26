@@ -1,4 +1,4 @@
-import 'package:mvvm_statemanagements/service/api_service.dart';
+import 'package:movieapp/service/api_service.dart';
 
 import '../models/genres_model.dart';
 import '../models/movies_model.dart';

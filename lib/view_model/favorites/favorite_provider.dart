@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:mvvm_statemanagements/models/movies_model.dart';
-import 'package:mvvm_statemanagements/view_model/favorites/favorite_state.dart';
+import 'package:movieapp/models/movies_model.dart';
+import 'package:movieapp/view_model/favorites/favorite_state.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

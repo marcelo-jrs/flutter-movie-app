@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:mvvm_statemanagements/constants/api_constants.dart';
-import 'package:mvvm_statemanagements/models/genres_model.dart';
-import 'package:mvvm_statemanagements/models/movies_model.dart';
+import 'package:movieapp/constants/api_constants.dart';
+import 'package:movieapp/models/genres_model.dart';
+import 'package:movieapp/models/movies_model.dart';
 
 
 class ApiService {

@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:mvvm_statemanagements/models/movies_model.dart';
+import 'package:movieapp/models/movies_model.dart';
 
 part 'favorite_state.freezed.dart';
 // part 'movies_state.g.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mvvm_statemanagements/models/genres_model.dart';
-import 'package:mvvm_statemanagements/view_model/movies/movies_provider.dart';
+import 'package:movieapp/models/genres_model.dart';
+import 'package:movieapp/view_model/movies/movies_provider.dart';
 
 class GenreUtils {
   static List<GenreModel> movieGenresNames(List<int> genre_ids, WidgetRef ref) {

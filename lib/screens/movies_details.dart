@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mvvm_statemanagements/models/movies_model.dart';
-import 'package:mvvm_statemanagements/widgets/cached_network_image.dart';
-import 'package:mvvm_statemanagements/widgets/movies/genres_widget.dart';
-import 'package:mvvm_statemanagements/widgets/movies/favorite_btn.dart';
+import 'package:movieapp/models/movies_model.dart';
+import 'package:movieapp/widgets/cached_network_image.dart';
+import 'package:movieapp/widgets/movies/genres_widget.dart';
+import 'package:movieapp/widgets/movies/favorite_btn.dart';
 
 
 class MovieDetailsScreen extends ConsumerWidget {
