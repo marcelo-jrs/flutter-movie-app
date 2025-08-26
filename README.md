@@ -1,16 +1,13 @@
-# movieapp
+# Mobile Movie App
 
-A new Flutter project.
+This app is built on Flutter with MVVM Architecture and Riverpod for state management
 
-## Getting Started
+TMDB API to fetch information about the movies
 
-This project is a starting point for a Flutter application.
+GetIt for dependency Injection
 
-A few resources to get you started if this is your first Flutter project:
+# Future Updates
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Rewrite riverpod code to use riverpod generator and comply with more recent functions - Implemented
+- Change models code to use the Freezed library - Implemented
+- Change the navigation service to use a navigation library aswell - Implemented
